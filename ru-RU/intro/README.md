@@ -1,53 +1,53 @@
 ---
 root: true
-name: Introduction
+name: Вступление
 sort: 0
 ---
 
-# What is Gogs?
+# Что такое Gogs?
 
-Gogs(Go Git Service) is a painless self-hosted Git Service written in Go.
+Gogs(Go Git Service) — удобная служба для собственного Git-репозитория, написанная на языке Go.
 
-## Purpose
+## Цели
 
-The goal of this project is to make the easiest, fastest and most painless way to set up a self-hosted Git service. With Go, this can be done in independent binary distribution across **ALL platforms** that Go supports, including Linux, Mac OS X, and Windows.
+Целью данного проекта является создать самый простой, быстрый и наиболее безболезненный способ настроить самостоятельно принимала Git обслуживание. С помощью языка Go, это может быть реализовано в независимом бинарном дистрибутиве для **всех платформы **, что поддерживает Go, в том числе Linux, Mac OS X, и Windows.
 
-## Requirements
+## Системные требования
 
-- Web Framework: [github.com/Unknwon/macaron](https://github.com/Unknwon/macaron)
-- UI Framework: [GitHub Octicons](https://octicons.github.com/) + [Font Awesome](http://fontawesome.io/)
+- Веб-фреймворк: [github.com/Unknwon/macaron](https://github.com/Unknwon/macaron)
+- UI-фреймворк: [GitHub Octicons](https://octicons.github.com/) + [Font Awesome](http://fontawesome.io/)
 - ORM: [github.com/go-xorm/xorm](https://github.com/go-xorm/xorm)
-- Database Driver: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) or [github.com/lib/pq](https://github.com/lib/pq) or [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
+- Подключение к БД: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) или [github.com/lib/pq](https://github.com/lib/pq) или [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
 
-## Directory Structure
+## Структура директорий
 
 ```
-cmd/								// commands
-conf/								// configuration
-  |__ content/						// global content
+cmd/								// команды
+conf/								// конфигурация
+  |__ content/						// глобальный контент
   |__ gitignore/		
   |__ license/				
-  |__ locale/						// i18n locales
+  |__ locale/						// i18n локали
 etc/
-models/								// business logic
-modules/							// helper modules
-  |__ auth/							// auth forms
-  |__ avatar/						// gravatar service
-  |__ base/							// common functions and types
+models/								// бизнес логика
+modules/							// вспомогательные модули
+  |__ auth/							// авторизация
+  |__ avatar/						// сервис работы с gravatar
+  |__ base/							// общие функции и типы
   |__ captcha/							
   |__ cron/						
   |__ git/							// git shell
-  |__ httplib/						// HTTP helpers
+  |__ httplib/						// работа с HTTP
   |__ log/					 
   |__ mailer/						
   |__ middleware/						
-  |__ process/						// process manager
-  |__ setting/						// app settings
+  |__ process/						// менеджер процессов
+  |__ setting/						// настройки приложения
   |__ social/						// OAuth2
-  |__ ssh/							// SSH server(prototype)
+  |__ ssh/							// SSH сервер(прототип)
   |__ uuid/							
-public/								// static web elements
-routers/							// controller logic
-scripts/							// helper scripts
+public/								// статика
+routers/							// контроллеры
+scripts/							// вспомогательные скрипты
 templates/								
 ```

@@ -1,10 +1,10 @@
 ---
-name: Known Issues
+name: Известные проблемы
 sort: 2
 ---
 
-# Known Issues
+# Известные проблемы
 
-This sheet shows the known issues with latest **release(v0.5.13)** version, be aware of them will reduce exceptions and improve your user experience. Some of them might be fixed in up-to-date code. See [Change Log](change_log.md) for getting up-to-date information about what issue has been fixed since last release.
+Эта таблица содержит список известных проблем последнего **релиза(v0.5.13)**. Ознакомление с ними снизит количество проблем и улучшит ваш опыт работы с Gogs. Некоторые из них могут быть устранены в актульных версиях кода. Смотрите [список изменений](change_log.md) для получения последней актуальной информации о том, какие проблемы были решены с прошлого релиза.
 
-Anything that is related to some version(e.g. `v0.4.0`) is not a promise but a early stage plan.
+Все, что связано с какой-то версией (например, `v0.4.0`) запланировано в работу.
